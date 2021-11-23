@@ -1,0 +1,31 @@
+// COLOR VARIABLES
+$color-primary: #1cc8ee;
+$color-secondary: #fcd42c;
+
+$color-white: #f5f5f5;
+$color-grey: #1c1d1d;
+$color-grey-light: #414242;
+$color-black: #131414;
+
+$color-background: #131414;
+
+// FONT VARIABLES
+$font-en: "Roboto", sans-serif;
+$font-ch: "Noto Sans TC", sans-serif;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+}
+
+body {
+  background-color: $color-background;
+}

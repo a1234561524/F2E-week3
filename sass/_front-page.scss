@@ -1,0 +1,86 @@
+body {
+  background-image: url(../img/background.png);
+  background-size: cover;
+  height: 95vh;
+  display: grid;
+  grid-template-columns: 1fr 45vw;
+  grid-template-rows: 20vh 75vh;
+}
+
+.contain {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  position: relative;
+
+  .road {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+  }
+  .btn {
+    width: 16rem;
+    height: 4.6rem;
+    border-radius: 0.5rem;
+    border: 0.2rem $color-primary solid;
+    background-color: $color-background;
+    box-shadow: 0 0 6px #1cc8ee;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .bus-station {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+  }
+
+  .bus-search {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+  }
+  .passenger-transport-search {
+    position: absolute;
+    top: 85%;
+    left: 10%;
+  }
+  .nav {
+    text-decoration: none;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    &:link,
+    &:visited {
+      color: $color-primary;
+    }
+    &:hover,
+    &:active {
+      background-color: $color-primary;
+      color: $color-black;
+    }
+  }
+  .icon-1 {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+  }
+  .icon-2,
+  .icon-3 {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+  }
+}
+
+.footer {
+  grid-column: 1/2;
+  position: absolute;
+  color: $color-white;
+  text-align: left;
+  padding: 2rem 4rem;
+  bottom: 0%;
+}

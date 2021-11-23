@@ -1,0 +1,39 @@
+.road {
+  background-color: $color-grey;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  padding-top: 5rem;
+
+  &__box {
+    list-style: none;
+    color: $color-primary;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+  }
+
+  &__time {
+    width: 7.9rem;
+    height: 4rem;
+    border-radius: 1.2rem;
+    background-color: $color-black;
+    border: 0.1rem $color-primary solid;
+    box-shadow: 0 0 5px #1cc8ee;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.pulling-in {
+  background-color: $color-primary;
+  color: $color-black;
+}

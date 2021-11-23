@@ -1,0 +1,32 @@
+.road-contain {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-rows: 20vh;
+  margin-top: 2rem;
+}
+.header-2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  &__logo {
+    grid-column: 1/-1;
+  }
+  .back {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    cursor: pointer;
+  }
+}
+.road-name {
+  color: $color-primary;
+}
+.road-direction {
+  color: $color-white;
+  &-text {
+    color: $color-primary;
+  }
+}
