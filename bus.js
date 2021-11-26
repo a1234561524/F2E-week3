@@ -180,6 +180,8 @@ function getRoute() {
                 timeText = "進站中";
               } else if (time <= 1 && 0 < time) {
                 timeText = "即將到站";
+              } else if (!time) {
+                timeText = "- - -";
               } else {
                 timeText = `${time} 分鐘`;
               }
@@ -209,6 +211,8 @@ function getRoute() {
                 timeText = "進站中";
               } else if (time <= 1 && 0 < time) {
                 timeText = "即將到站";
+              } else if (!time) {
+                timeText = "- - -";
               } else {
                 timeText = `${time} 分鐘`;
               }
